@@ -1,0 +1,17 @@
+ POST http://127.0.0.1:8000/accounts/register
+Content-Type: application/json
+
+{ "username": "adam", "password": "Pass1234!", "email": "adam@mail.com" }
+
+###
+
+POST http://127.0.0.1:8000/accounts/login
+Content-Type: application/json
+
+{ "username": "adam", "password": "Pass1234!" }
+
+###
+
+POST http://127.0.0.1:8000/accounts/logout
+Content-Type: application/json
+Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzIyOTM2MjgxLCJpYXQiOjE3MjI5MzU5ODEsImp0aSI6ImVjYmFkNjdjZTdiNzQxZGY4ODM3ZGI1MGZhNjZhOWNjIiwidXNlcl9pZCI6OH0.a8bzmr87GMsOZaQz_VOq638wEBigjRDLM1zY75-2ji4
